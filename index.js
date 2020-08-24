@@ -228,7 +228,7 @@ const ScrollableTabView = createReactClass({
     if (Platform.OS === 'ios') {
       const scenes = this._composeScenes();
       return <Animated.ScrollView
-        keyboardShouldPersistTaps="handled"
+        keyboardShouldPersistTaps="always"
         horizontal
         pagingEnabled
         automaticallyAdjustContentInsets={false}
